@@ -16,10 +16,11 @@ function getCart() {
     const cartData = localStorage.getItem('glowmoraCart');
     return cartData ? JSON.parse(cartData) : [];
 }
-
+ //getItem is used to load the cart data from localStorage. If there is no data, it returns an empty array.
 function saveCart(cart) {
     localStorage.setItem('glowmoraCart', JSON.stringify(cart));
 }
+//SetItem is used to save the cart data back to localStorage after adding or removing items.
 
 function addToCart(name, price) {
     let cart = getCart();
