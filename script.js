@@ -90,6 +90,8 @@ if (weatherDiv) {
 document.addEventListener('DOMContentLoaded', function() {
     
     // Fade in animation for products
+
+    // I used JavaScrpt to create a smooth entrance for the products.
     const products = document.querySelectorAll('.product');
     products.forEach((product, index) => {
         product.style.opacity = '0';
@@ -103,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Fade in animation for features
+    //
     const features = document.querySelectorAll('.feature');
     features.forEach((feature, index) => {
         feature.style.opacity = '0';
@@ -126,13 +129,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Hero fade in
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.opacity = '0';
-        hero.style.transition = 'opacity 1s ease';
-        setTimeout(() => {
-            hero.style.opacity = '1';
-        }, 100);
-    }
 });
